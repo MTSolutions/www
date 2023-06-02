@@ -480,7 +480,7 @@ app.scroll = {
     $("[data-goto]").click(function(e) {
       e.preventDefault();
       app.scroll.goto($(this).attr("data-goto"));
-      return console.log("data");
+      return app.header.nav.out();
     });
     hash = window.location.hash.replace("#", "");
     if (hash !== "") {
@@ -568,7 +568,7 @@ app.scroll = {
     }
     from = $("[data-goto='" + to + "']");
     if (!add) {
-      add = $("header").height() + 80;
+      add = $("header").height();
       if (from.closest("[sticky]").length) {
         add += from.closest("[sticky]").height();
       }
@@ -588,7 +588,7 @@ app.scroll = {
       var add, from, to;
       from = $(this);
       to = $($(this).attr("data-goto"));
-      add = $("header").height() + 120;
+      add = $("header").height();
       if (from.closest("[sticky]").length) {
         add += from.closest("[sticky]").height();
       }
