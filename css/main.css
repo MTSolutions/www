@@ -3643,8 +3643,34 @@ section.section--clients .section__header .section__description {
   color: #777e90;
 }
 section.section--clients .section__clients {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
+}
+section.section--clients .section__clients .section__client {
+  padding: 10px;
+  min-height: 100px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  opacity: 0.6;
+  transition: 0.3s;
+}
+section.section--clients .section__clients .section__client:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  opacity: 1;
+}
+section.section--clients .section__clients .section__client .section__img img {
+  width: initial;
+  height: initial;
+  max-width: 120px;
+  max-height: 60px;
+  background-blend-mode: exclusion;
 }
 section.section--testimonies {
   background-color: #eee;
