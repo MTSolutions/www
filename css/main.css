@@ -1639,6 +1639,11 @@ article.article--feature {
   padding: 0;
   margin-bottom: 20px;
 }
+@media (min-width: 720px) {
+  article.article--feature {
+    min-height: 160px;
+  }
+}
 article.article--feature .article__icon {
   margin-right: 20px;
   min-width: 25%;
@@ -3618,8 +3623,8 @@ section.section--features .section__flex .section__image {
     position: absolute;
     top: 50%;
     left: 60%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
     width: 100%;
     margin-bottom: 0px;
   }

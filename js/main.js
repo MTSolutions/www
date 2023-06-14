@@ -820,6 +820,10 @@ app.swiper = {
       spaceBetween: 0,
       centeredSlides: true,
       loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+      },
       breakpoints: {
         768: {
           slidesPerView: 4
