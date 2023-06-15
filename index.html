@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=65873" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=65873" type="text/javascript"></script>
+    <link href="css/main.css?v=87090" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=87090" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -161,7 +161,7 @@
                 <div class="col-md-6 col-md-pull-6">
                   <div class="section__content">
                     <h3 class="h2 section__title">Servicio escalable</h3>
-                    <p class="section__description">Nuestros módulos permiten ir incorporando nuevas funciones orientada a avanzar en hacia la Industria 4.0, en la medida que se requieran. Energía, Gestión de Mermas (Pesas), Seguimiento de Ordenes, Digitalización de Formularios…etc.</p>
+                    <p class="section__description">Nuestros módulos permiten ir incorporando nuevas funciones orientadas para avanzar hacia la Industria 4.0, en la medida que se requieran. Energía, Gestión de Mermas (Pesas), Seguimiento de Ordenes, Digitalización de Formularios…etc.</p>
                   </div>
                 </div>
               </div>
@@ -188,7 +188,7 @@
                             <div class="article__icon"> <img src="img/icons/1.png"></div>
                             <div class="article__icon"> 
                               <h4 class="article__title">MTcontrol</h4>
-                              <p class="article__description">visualización de producción y tiempo muertos de manera automática en procesos mecanizados.</p>
+                              <p class="article__description">visualización de producción y tiempos muertos de manera automática en procesos mecanizados.</p>
                             </div>
                           </article>
                         </div>
@@ -215,7 +215,7 @@
                             <div class="article__icon"> <img src="img/icons/4.png"></div>
                             <div class="article__icon"> 
                               <h4 class="article__title">MTflow</h4>
-                              <p class="article__description">seguimiento de procesos de producción mecanizados o manuales y ordenes de manera integral.</p>
+                              <p class="article__description">seguimiento de procesos de producción mecanizados o manuales y órdenes de manera integral.</p>
                             </div>
                           </article>
                         </div>
@@ -295,7 +295,7 @@
                 <div class="article__body"> 
                   <h4 class="article__title">Agilice sus procesos </h4>
                   <div class="article__hover">
-                    <p class="article__description">Teniendo información confiable de sus detenciones, puede generar un plan de mejora para disminuirlas. Entregamos reportes de Detenciones y OEE generados de manera automática.</p>
+                    <p class="article__description">Teniendo información confiable de sus detenciones puede generar un plan de mejora para disminuirlas. Entregamos reportes de Detenciones y OEE generados de manera automática.</p>
                   </div>
                   <div class="article__icon"> <img src="img/icons/icon-hover.png"></div>
                 </div>
@@ -321,9 +321,9 @@
                   <div class="bg"> <img src="img/uploads/img-hover-3.jpeg"></div>
                 </div>
                 <div class="article__body"> 
-                  <h4 class="article__title">Empodere a sus trabajadores (o colaboradores).</h4>
+                  <h4 class="article__title">Empodere sus colaboradores</h4>
                   <div class="article__hover">
-                    <p class="article__description">Nuestros dashboards configurables, permiten realimentar a trabajadores y supervisores en las líneas con información valiosa y oportuna. Información de Orden  de Producción, Objetivo  del turno, y otros.</p>
+                    <p class="article__description">Nuestros dashboards configurables permiten realimentar a trabajadores y supervisores en las líneas con información valiosa y oportuna. Información de Orden  de Producción, Objetivo  del turno, y otros.</p>
                   </div>
                   <div class="article__icon"> <img src="img/icons/icon-hover.png"></div>
                 </div>
@@ -533,13 +533,13 @@
                 </div>
                 <div class="col-md-6 dscroll"> 
                   <div class="section__form">
-                    <form class="form">
+                    <form action="send.php" method="post" class="form">
                       <div class="cols"> 
                         <div class="col-md-6"> 
                           <div class="form__element"> 
                             <div class="form__title">Nombre y Apellido</div>
                             <div class="form__input"> 
-                              <input type="text" name="#">
+                              <input type="text" name="name" required>
                             </div>
                           </div>
                         </div>
@@ -547,7 +547,7 @@
                           <div class="form__element"> 
                             <div class="form__title">Email </div>
                             <div class="form__input"> 
-                              <input type="text" name="#">
+                              <input type="text" name="email" required>
                             </div>
                           </div>
                         </div>
@@ -555,7 +555,7 @@
                           <div class="form__element"> 
                             <div class="form__title">Número de teléfono</div>
                             <div class="form__input"> 
-                              <input type="text" name="#">
+                              <input type="text" name="phone" required>
                             </div>
                           </div>
                         </div>
@@ -563,7 +563,7 @@
                           <div class="form__element"> 
                             <div class="form__title">Empresa </div>
                             <div class="form__input"> 
-                              <input type="text" name="#">
+                              <input type="text" name="company" required>
                             </div>
                           </div>
                         </div>
@@ -571,7 +571,7 @@
                           <div class="form__element"> 
                             <div class="form__title">Mensaje </div>
                             <div class="form__input">
-                              <textarea name="#"></textarea>
+                              <textarea name="message" required></textarea>
                             </div>
                           </div>
                         </div>
@@ -612,6 +612,18 @@
           <div class="modal__box">
             <div class="modal__close"><span class="fa fa-close"> </span></div>
             <div class="modal__player yt-video"></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--send">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box"> 
+            <div class="modal__close"> <span class="fa fa-close"> </span></div>
+            <div class="modal__content"> 
+              <h3>¡Gracias por tu mensaje!</h3>
+              <p>Hemos recibido tus datos de contacto y te responderemos a la brevedad posible. Valoramos tu interés y nos pondremos en contacto contigo en cuanto revisemos tu consulta.</p><a data-close-modal class="btn">Volver al sitio web</a>
+            </div>
           </div>
         </div>
       </div>

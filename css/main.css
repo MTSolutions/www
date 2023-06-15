@@ -3194,6 +3194,14 @@ header .header__right .header__item .header__item__nav ul li:after {
 .modal .modal__button a {
   margin-bottom: 20px;
 }
+.modal.modal--send .modal__box {
+  min-height: initial;
+}
+.modal.modal--send .modal__box .modal__content {
+  text-align: center;
+  color: #09101a;
+  margin-bottom: 0;
+}
 section {
   position: relative;
   background-color: #fff;
