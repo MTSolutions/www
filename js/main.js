@@ -47,7 +47,11 @@ app.bg = {
 };
 
 app.common = {
-  init: function() {}
+  init: function() {
+    if (window.location.hash === '#sendmail') {
+      return app.modal.open(".modal--send");
+    }
+  }
 };
 
 app.faq = {
@@ -426,11 +430,16 @@ app.loadmore = {
 
 app.modal = {
   init: function() {
-    $("[data-modal-open]").click(function(e) {
+    $("[data-modal-login]").click(function(e) {
       e.preventDefault();
-      return app.modal.open(".modal--video");
+      app.modal.open(".modal--login");
+      $(".modal--resetpass").removeClass("modal--in");
+      return $(".modal--register").removeClass("modal--in");
     });
     $(".modal__close").click(function() {
+      return app.modal.close($(this).closest(".modal"));
+    });
+    $("[data-close-modal]").click(function() {
       return app.modal.close($(this).closest(".modal"));
     });
     return $('.modal').click(function(e) {
