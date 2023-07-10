@@ -8,7 +8,7 @@ $company = $_POST['company'];
 $mensaje = $_POST['message'];
 
 // Datos para el correo
-$destinatario  = 'correodeejemplo@gmail.com';
+$destinatario = 'comercial@mtsolutions.io, avilchez@mtsolutions.io, fsuazo@mtsolutions.io';
 $title = "Contacto desde nuestra web";
 $carta = "Mensaje enviado desde la MT Solutions\n";
 $carta .= "Nombre: $name \n";
@@ -20,7 +20,7 @@ $carta .= "Mensaje: $mensaje";
 
 // Enviando Mensaje
 mail($destinatario, $title, $carta);
-header('Location:["URL SITIO WEB ESPAÑOL"]#sendmail');
+header('Location:"URL SITIO WEB ESPAÑOL"#sendmail');
 exit();
 
 ?>
