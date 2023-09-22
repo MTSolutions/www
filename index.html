@@ -552,7 +552,7 @@
                 </div>
                 <div class="col-md-6 dscroll"> 
                   <div class="section__form">
-                    <form action="https://api.web3forms.com/submit" method="POST" class="form">
+                    <form id="myForm" action="https://api.web3forms.com/submit" method="POST" class="form">
                       <input type="hidden" name="access_key" value="3da1a9e4-da97-4a21-a5fa-2e7cf6adcd79">
                       <div class="cols"> 
                         <div class="col-md-6"> 
@@ -602,6 +602,14 @@
                         </div>
                       </div>
                     </form>
+                    <script>
+                      document.getElementById('myForm').addEventListener('submit', function() {
+                          window.dataLayer = window.dataLayer || [];
+                          window.dataLayer.push({
+                              'event': 'formSubmission'
+                          });
+                      });
+                  </script>
                   </div>
                 </div>
               </div>
