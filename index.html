@@ -187,6 +187,82 @@
               </div>
             </div>
           </div>
+          <div class="section__wrap">
+            <div class="section__body"> 
+              <div class="cols">
+                <div class="section__flex">
+                  <div class="col-md-6 dscroll">
+                    <div class="section__content"> 
+                      <h3 class="h1 section__title">¡Podemos <strong>ayudarte!</strong></h3>
+                      <p class="section__description">Regístrate y te contactaremos a la brevedad para que logres aumentar tu utilidad.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 dscroll"> 
+                    <div class="section__form">
+                      <form id="myForm" action="https://api.web3forms.com/submit" method="POST" class="form">
+                        <input type="hidden" name="access_key" value="3da1a9e4-da97-4a21-a5fa-2e7cf6adcd79">
+                        <div class="cols"> 
+                          <div class="col-md-6"> 
+                            <div class="form__element"> 
+                              <div class="form__title">Nombre y Apellido</div>
+                              <div class="form__input"> 
+                                <input type="text" name="name" required>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6"> 
+                            <div class="form__element"> 
+                              <div class="form__title">Email </div>
+                              <div class="form__input"> 
+                                <input type="text" name="email" required>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6"> 
+                            <div class="form__element"> 
+                              <div class="form__title">Número de teléfono</div>
+                              <div class="form__input"> 
+                                <input type="text" name="phone" required>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6"> 
+                            <div class="form__element"> 
+                              <div class="form__title">Empresa </div>
+                              <div class="form__input"> 
+                                <input type="text" name="company" required>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form__element"> 
+                              <div class="form__title">Mensaje </div>
+                              <div class="form__input">
+                                <textarea name="message" required></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12"> 
+                            <div class="form__button"> 
+                              <button class="btn btn--secondary">Enviar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                      <script>
+                        document.getElementById('myForm').addEventListener('submit', function() {
+                            window.dataLayer = window.dataLayer || [];
+                            window.dataLayer.push({
+                                'event': 'formSubmission'
+                            });
+                        });
+                    </script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section--features section--3">
